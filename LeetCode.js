@@ -1,7 +1,13 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Problem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// **Problem Name**
+// Problem Problem - couldn't help mineself
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// @Input Paramaters
+// @expected return
+
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Problem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// **Richest Customer Wealth**
 // You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the i​​​​​​​​​​​th​​​​ customer has in the j​​​​​​​​​​​th​​​​ bank. 
 // Return the wealth that the richest customer has.
 // A customer's wealth is the amount of money they have in all their bank accounts. 
@@ -13,8 +19,9 @@ var maximumWealth = function(accounts) {
     return accounts.map(e => e.reduce((a,b)=>a+b)).reduce((a,b)=> Math.max(a,b))
 };
 
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Problem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Plus One
+// **Plus One**
 // You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. 
 // The digits are ordered from most significant to least significant in left-to-right order. 
 // The large integer does not contain any leading 0's.
@@ -30,8 +37,9 @@ var plusOne = function(digits) {
     return ans.split('');
 }
 
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Problem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Length of Last Word
+// **Length of Last Word**
 // Given a string s consisting of some words separated by some number of spaces, return the length of the last word in the string.
 // A word is a maximal substring consisting of non-space characters only.
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,8 +58,9 @@ var lengthOfLastWord = function(s){
     }
 };
 
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Problem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Palindrome Number
+// **Palindrome Number**
 // Given an integer x, return true if x is palindrome integer.
 // An integer is a palindrome when it reads the same backward as forward.
 // For example, 121 is a palindrome while 123 is not.
@@ -66,8 +75,9 @@ var isPalindrome = function(x) {
     }
 };
 
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Problem ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Reverse Integer
+// **Reverse Integer**
 // Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 // Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
