@@ -8,23 +8,14 @@ function print (str) {
     const string = 'javascriptloops';
     // create a variable to execute from function argument, if undefined use backup 'string'
     let altStr = str || string;
-    let vowArr = [], conArr = [];
+    let conArr = [];
     let regexTest = /a|e|i|o|u/;
-
     // one method to iterate through the string
     for (let i in altStr) {
-        regexTest.test(altStr[i]) ? vowArr.push(altStr[i]) : conArr.push(altStr[i])
+        regexTest.test(altStr[i]) ? console.log(altStr[i]) : conArr.push(altStr[i])
     }
 
-    let combinedArr = vowArr.concat(conArr);
-    return combinedArr.forEach(i => console.log(i))
-        
-    //using this same method, I could have done something like: 
-    // for (let i in altStr) {
-    //     regexTest.test(altStr[i]) ? console.log(altStr[i]) : conArr.push(altStr[i])
-    // }
-    // return conArr.forEach(i => console.log(i))
-    // this would have helped time and space by reducing two arrays, vowArr and combinedArr, and the join
+    return conArr.forEach(i => console.log(i))
 }
 
 console.log('Original function, solution:');
