@@ -18,6 +18,13 @@ function print (str) {
 
     let combinedArr = vowArr.concat(conArr);
     return combinedArr.forEach(i => console.log(i))
+        
+    //using this same method, I could have done something like: 
+    // for (let i in altStr) {
+    //     regexTest.test(altStr[i]) ? console.log(altStr[i]) : conArr.push(altStr[i])
+    // }
+    // return conArr.forEach(i => console.log(i))
+    // this would have helped time and space by reducing two arrays, vowArr and combinedArr, and the join
 }
 
 console.log('Original function, solution:');
