@@ -9,7 +9,7 @@ function print (str) {
     // create a variable to execute from function argument, if undefined use backup 'string'
     let altStr = str || string;
     let conArr = [];
-    let regexTest = /[aeiou]/;
+    let regexTest = /[aeiou]/i;
     // one method to iterate through the string
     for (let i in altStr) {
         regexTest.test(altStr[i]) ? console.log(altStr[i]) : conArr.push(altStr[i])
