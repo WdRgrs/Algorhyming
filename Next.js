@@ -6,7 +6,7 @@ let randomString = 'j;lajksdf;alksj';
 function print (str) {
     // the default string to check against
     const string = 'javascriptloops';
-    // create a variable to execute from function argument, if not available use backup 'string'
+    // create a variable to execute from function argument, if undefined use backup 'string'
     let altStr = str || string;
     let vowArr = [], conArr = [];
     let regexTest = /a|e|i|o|u/;
